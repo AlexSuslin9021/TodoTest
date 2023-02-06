@@ -17,14 +17,25 @@ export function App(){
         {id:3, title:'Milan', LH:true},
         {id:4, title:'PAOK', LH:false},
     ])
+    let[filter, setFilter]= useState<FilterType>('all')
     const removeTeam=(id:number)=>{//удаляет команды
        let a= team.filter(t=>t.id!==id)
         setteam(a)
     }
 
+    let filterTeam =team
+    if(filter==='winner')
+        filterTeam= filterTeam.filter(t=>t.LH)
+    if(filter==='loser')
+        filterTeam= filterTeam.filter(t=>!t.LH)
+    const filterTeams=(value:FilterType)=>{
+        setFilter(value)
+    }
+
     return<Todolist
         title={'FC'}
-        team={team}
+        team={filterTeam}
         removeTeam={removeTeam}
+        filterTeams={filterTeams}
     />
 }

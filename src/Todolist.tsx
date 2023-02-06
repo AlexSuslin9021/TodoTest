@@ -4,6 +4,7 @@ type PropsTyp={
     team:PropsTypeTeam[]
     title:string
     removeTeam:(id:number)=>void
+    filterTeams:(value:FilterType)=>void
 }
 const Todolist:FC  <PropsTyp> = (props) => {
     return (
@@ -16,9 +17,9 @@ const Todolist:FC  <PropsTyp> = (props) => {
                 <button onClick={()=>props.removeTeam(t.id)}> x</button>
             </li>)}
         </ul>
-            <button onClick={()=>{}}> All</button>
-            <button onClick={()=>{}}> Winner</button>
-            <button onClick={()=>{}}> Loser</button>
+            <button onClick={()=>props.filterTeams('all')}> All</button>
+            <button onClick={()=>props.filterTeams('winner')}> Winner</button>
+            <button onClick={()=>props.filterTeams('loser')}> Loser</button>
 
 </div>
     );
