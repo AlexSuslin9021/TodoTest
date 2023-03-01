@@ -8,8 +8,8 @@ function App() {
     return (
         <div>
             <Rating/>
-            <Accordion title={'title1'}/>
-            <Accordion title={'title2'}/>
+            <Accordion titleValue={'title1'} collapsed={true}/>
+            <Accordion titleValue={'title2'} collapsed={false}/>
         </div>
     );
 }
