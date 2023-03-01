@@ -1,35 +1,19 @@
 import React from 'react';
 import './App.css';
-
+import {Accordion} from "./COMPONENT/Accordion/Accordion";
+import {Rating} from "./COMPONENT/Rating/Rating";
 
 
 function App() {
     return (
         <div>
-This is App
             <Rating/>
-            <Accordion/>
+            <Accordion title={'title1'}/>
+            <Accordion title={'title2'}/>
         </div>
     );
 }
 
 
-const Rating=()=>{
-return <div>
-    <div>Rating</div>
-    <div>Rating</div>
-    <div>Rating</div>
-    <div>Rating</div>
-</div>
-}
-const Accordion=()=>{
-    return <div>
-        <h3> Menu</h3>
-     <ul>
-         <li>1</li>
-         <li>2</li>
-         <li>3</li>
-     </ul>
-    </div>
-}
+
 export default App;
