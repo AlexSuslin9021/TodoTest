@@ -6,10 +6,7 @@ import {useState} from "react";
 //
 // }
 export function OnOff(){
-
-
    const [on, setOn]=useState<boolean>(true)
-
 
     const OnStyle={
         width:'30px',
