@@ -1,5 +1,4 @@
-import {useState} from "react";
-//
+
 type PropsOnOff = {
     valueOnOff: boolean
     changeColor:(on:boolean)=>void
