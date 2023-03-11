@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import {Rating, RatingValueType} from './Rating';
+import {Rating, RatingValueType} from '../COMPONENT/Controlled/Rating/Rating';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {

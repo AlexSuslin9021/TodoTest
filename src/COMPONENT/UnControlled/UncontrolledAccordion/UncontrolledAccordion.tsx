@@ -1,6 +1,6 @@
 import React, {FC, useState} from "react";
 
-type AccordionType = {
+export type AccordionType = {
     titleValue: string
 
 }
